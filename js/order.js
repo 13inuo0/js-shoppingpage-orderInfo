@@ -15,6 +15,7 @@ window.addEventListener("load", function () {
   // name으로 접근 (중단)
   //   console.log(document.ship.shippingName);
   //   console.log(document.order.shippingName.value);
+
   submit.addEventListener("click", function (e) {
     // 잠깐 입력되고 사라지면 매개변수 작성하고 e.preventDefault()를 작성하면 정상작동한다.
     e.preventDefault();
@@ -58,6 +59,13 @@ window.addEventListener("load", function () {
     console.log(userConfirmed);
     if (userConfirmed) {
       alert("입력완료! 결제가 완료되었습니다.");
+      document.querySelector("billingName").value = "";
+      document.querySelector("billingTel").value = "";
+      document.querySelector("billingAdress").value = "";
+      document.querySelector("shippingName").value = "";
+      document.querySelector("shippingTel").value = "";
+      document.querySelector("shippingAdress").value = "";
+      check.checked = false;
     } else {
       alert("정보를 다시 확인해주세요.");
     }
