@@ -38,8 +38,10 @@ window.addEventListener("load", function () {
     const billingAdress = document.querySelector("#billingAdress").value;
     // console.log(billingAdress);
     const shippingName = document.querySelector("#shippingName").value;
+    // const shippinName = ship.shippingName.value
     // console.log(shippingName);
     const shippingTel = document.querySelector("#shippingTel").value;
+    // const shippingTel = ship.shippingTel.valueb
     // console.log(shippingTel);
     const shippingAdress = document.querySelector("#shippingAdress").value;
     // console.log(shippingAdress);
